@@ -71,34 +71,17 @@ This is a deliberately simple recency rule. It does not adjust for the expected 
 
 ### 3. Availability of disaggregated data
 
-The model checks whether a reported series contains breakdowns by age, sex, and location. If (k) of those three dimensions are represented, the penalty is:
+The model checks whether a reported series contains breakdowns by age, sex, and location. If **k** of those three dimensions are represented, the penalty is:
 
-[
-D_i = 3-k
-]
+**Disaggregation penalty = 3 − k**
 
 For example, a series disaggregated by age and sex but not location receives a penalty of 1. Goals 7, 12, 13, and 14 are treated as exempt from these three disaggregation dimensions and receive a disaggregation penalty of 0.
 
 ### Composite score
 
-For (n) records and user-selected weights (w_A), (w_T), and (w_D), the dashboard calculates:
+For **n** records and user-selected availability, timeliness, and disaggregation weights, the dashboard calculates:
 
-[
-	ext{Data Quality Score}
-=
-100 	imes
-left[
-1-
-rac{
-sum_{i=1}^{n}
-left(
-w_A A_i+w_T T_i+w_D D_i
-ight)
-}{
-9n
-}
-ight]
-]
+**Data Quality Score = 100 × [1 − Σ(weighted gap penalties) / 9n]**
 
 The reference results below use equal weights of 1. Users can vary each weight between 0 and 1 in increments of 0.1 to reflect different collection priorities.
 
