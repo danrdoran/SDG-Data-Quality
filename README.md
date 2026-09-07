@@ -4,8 +4,6 @@ An interactive Power BI dashboard for identifying gaps in national reporting on 
 
 The dashboard is intended to help analysts explore where additional statistical collection or reporting effort may be most useful. A higher score indicates stronger data coverage under the selected weights; a lower score indicates a larger potential collection priority.
 
-> **Data vintage:** 2023. The dashboard is a historical snapshot and does not reflect subsequent updates to the UN SDG Global Database.
-
 <!-- Add a dashboard overview image here:
 ![Dashboard overview](images/dashboard-overview.png)
 -->
