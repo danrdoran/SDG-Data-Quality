@@ -1,4 +1,4 @@
-# SDG Data Quality and Collection-Priority Dashboard
+# SDG Data Quality and Collection Priority Dashboard
 
 An interactive Power BI dashboard for identifying gaps in national reporting on the Sustainable Development Goals (SDGs). It compares data availability, timeliness, and demographic or geographic disaggregation across countries and areas, then summarizes those dimensions from the UN's six key transitions down to individual SDG series.
 
